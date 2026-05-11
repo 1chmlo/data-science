@@ -1,3 +1,6 @@
 .venv*
 venv/*
 dataset/*
+
+*.parquet
+*/*.parquet
