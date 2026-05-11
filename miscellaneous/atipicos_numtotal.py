@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # 1. CARGA DIRECTA DEL ARCHIVO LIMPIO
-df_clean = pd.read_parquet('dataset/at_urg_respiratorio_LIMPIO.parquet')
+df = pd.read_parquet('dataset/at_urg_respiratorio_LIMPIO.parquet')
 
 print(f"--- ANÁLISIS DE INTEGRIDAD Y OUTLIERS ---\n")
 
@@ -12,16 +12,16 @@ print(f"--- ANÁLISIS DE INTEGRIDAD Y OUTLIERS ---\n")
 # 1. VALIDACIÓN DE RANGOS LÓGICOS (NUEVO)
 # ==================================================
 # Chequeo de Semanas (1-53)
-semanas_invalidas = df_clean[(df_clean['SemanaEstadistica'] < 1) | (df_clean['SemanaEstadistica'] > 53)]
-min_sem = df_clean['SemanaEstadistica'].min()
-max_sem = df_clean['SemanaEstadistica'].max()
+semanas_invalidas = df[(df['SemanaEstadistica'] < 1) | (df['SemanaEstadistica'] > 53)]
+min_sem = df['SemanaEstadistica'].min()
+max_sem = df['SemanaEstadistica'].max()
 
 print(f"1. Rango de Semanas: {min_sem} a {max_sem}")
 print(f"   -> Registros fuera de rango (1-53): {len(semanas_invalidas)}")
 
 # Chequeo de OrdenCausa (3-35 según tus datos)
-min_ord = df_clean['OrdenCausa'].min()
-max_ord = df_clean['OrdenCausa'].max()
+min_ord = df['OrdenCausa'].min()
+max_ord = df['OrdenCausa'].max()
 print(f"2. Rango de OrdenCausa: {min_ord} a {max_ord}")
 print(f"   -> Verificación: {'OK' if min_ord >= 3 and max_ord <= 35 else 'REVISAR RANGOS'}")
 
@@ -38,7 +38,7 @@ def detect_outliers_iqr(group):
     outliers = group[group['NumTotal'] > limite_superior]
     return pd.Series([limite_superior, len(outliers)], index=['Limite_Sup', 'Cant_Outliers'])
 
-outliers_por_causa = df_clean.groupby('Causa').apply(detect_outliers_iqr)
+outliers_por_causa = df.groupby('Causa').apply(detect_outliers_iqr)
 
 print("3. Resumen de Límites y Cantidad de Outliers por Causa:")
 print(outliers_por_causa)
@@ -48,7 +48,7 @@ print(outliers_por_causa)
 # ==================================================
 # Gráfico Boxplot
 plt.figure(figsize=(14, 8))
-sns.boxplot(data=df_clean, x='NumTotal', y='Causa', palette='viridis')
+sns.boxplot(data=df, x='NumTotal', y='Causa', palette='viridis')
 plt.title('Distribución de NumTotal y Detección de Outliers por Causa')
 plt.xlabel('Número Total de Atenciones')
 plt.ylabel('Causa Respiratoria')
@@ -57,4 +57,4 @@ plt.tight_layout()
 plt.show()
 
 print("\n4. TOP 5 REGISTROS MÁS EXTREMOS (VALORES MÁS ALTOS):")
-print(df_clean.sort_values(by='NumTotal', ascending=False)[['Anio', 'SemanaEstadistica', 'Causa', 'NumTotal']].head())
+print(df.sort_values(by='NumTotal', ascending=False)[['Anio', 'SemanaEstadistica', 'Causa', 'NumTotal']].head())

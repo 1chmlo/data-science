@@ -1,6 +1,6 @@
 EstablecimientoCodigo,RegionCodigo,ComunaCodigo,ServicioSaludCodigo,TipoEstablecimiento,DependenciaAdministrativa,NivelAtencion,TipoUrgencia,NivelComplejidad,Anio,SemanaEstadistica,OrdenCausa,Causa,NumTotal
-106100,5,5101,6,Hospital,Servicio de Salud,TERCIARIO,URGENCIA HOSPITALARIA (UEH),Alta Complejidad,2019,16,4,IRA Alta (J00-J06),419
-113806,13,13121,13,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2020,25,4,IRA Alta (J00-J06),10
-200957,8,8111,19,Servicio de Urgencia Rural (SUR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SUR),Baja Complejidad,2021,25,4,IRA Alta (J00-J06),0
-200829,16,16202,17,Servicio de Urgencia Rural (SUR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SUR),Baja Complejidad,2021,22,11,"TOTAL ATENCIONES POR COVID-19, Virus Identificado U07.1",0
-102800,1,1101,2,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2022,15,34,"- Por covid-19, virus no identificado U07.2",0
+128110,8,8201,28,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2017,12,3,TOTAL CAUSA SISTEMA  RESPIRATORIO (J00-J98),282
+117106,16,16201,17,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2017,24,3,TOTAL CAUSA SISTEMA  RESPIRATORIO (J00-J98),178
+113809,13,13116,13,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2019,23,3,TOTAL CAUSA SISTEMA  RESPIRATORIO (J00-J98),802
+200766,7,7307,16,Servicio de Urgencia Rural (SUR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SUR),Baja Complejidad,2023,48,3,TOTAL CAUSA SISTEMA  RESPIRATORIO (J00-J98),45
+105825,4,4101,5,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2024,43,3,TOTAL CAUSA SISTEMA  RESPIRATORIO (J00-J98),156

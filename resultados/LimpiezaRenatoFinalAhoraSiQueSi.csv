@@ -1,0 +1,201 @@
+EstablecimientoCodigo,RegionCodigo,ComunaCodigo,ServicioSaludCodigo,TipoEstablecimiento,DependenciaAdministrativa,NivelAtencion,TipoUrgencia,NivelComplejidad,Anio,SemanaEstadistica,OrdenCausa,NumTotal,Causa
+200173,8,8206,28,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2019,8,7,6,Bronquitis/Bronquiolitis aguda (J20-J21)
+116829,7,7201,16,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2025,53,7,22,Bronquitis/Bronquiolitis aguda (J20-J21)
+200123,13,13501,10,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2021,31,4,51,IRA alta (J00-J06)
+120107,8,8312,20,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2020,41,8,2,Crisis obstructiva bronquial (J40-J46)
+109811,13,13302,9,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2015,35,7,59,Bronquitis/Bronquiolitis aguda (J20-J21)
+113808,13,13116,13,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2016,16,7,40,Bronquitis/Bronquiolitis aguda (J20-J21)
+116106,7,7103,16,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2016,35,7,2,Bronquitis/Bronquiolitis aguda (J20-J21)
+119805,8,8111,19,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2017,29,7,39,Bronquitis/Bronquiolitis aguda (J20-J21)
+114103,13,13131,14,Hospital,Servicio de Salud,TERCIARIO,URGENCIA HOSPITALARIA (UEH),Alta Complejidad,2018,2,7,53,Bronquitis/Bronquiolitis aguda (J20-J21)
+115805,6,6108,15,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2018,4,7,8,Bronquitis/Bronquiolitis aguda (J20-J21)
+107802,5,5109,7,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2019,51,7,56,Bronquitis/Bronquiolitis aguda (J20-J21)
+116840,7,7101,16,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2014,11,9,1,"Otra causa respiratoria (J22, J30-J39, J47, J60-J98)"
+106829,5,5601,6,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2016,47,9,4,"Otra causa respiratoria (J22, J30-J39, J47, J60-J98)"
+200741,4,4301,5,Servicio de Urgencia Rural (SUR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SUR),Baja Complejidad,2026,18,9,0,"Otra causa respiratoria (J22, J30-J39, J47, J60-J98)"
+200777,7,7104,16,Servicio de Urgencia Rural (SUR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SUR),Baja Complejidad,2023,42,35,0,"COVID-19, virus identificado (U07.1)"
+123801,10,10301,23,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2021,21,7,1,Bronquitis/Bronquiolitis aguda (J20-J21)
+200051,13,13110,14,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2024,8,7,4,Bronquitis/Bronquiolitis aguda (J20-J21)
+113150,13,13402,13,Hospital,Servicio de Salud,TERCIARIO,URGENCIA HOSPITALARIA (UEH),Mediana Complejidad,2016,8,5,0,Influenza (J09-J11)
+112810,13,13120,12,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2018,39,5,0,Influenza (J09-J11)
+200148,7,7401,16,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2026,16,34,0,"COVID-19, virus no identificado (U07.2)"
+200110,5,5109,7,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2016,28,8,12,Crisis obstructiva bronquial (J40-J46)
+124120,10,10104,24,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2017,16,8,1,Crisis obstructiva bronquial (J40-J46)
+117108,16,16203,17,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2025,41,8,6,Crisis obstructiva bronquial (J40-J46)
+109808,13,13104,9,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2020,14,34,0,"COVID-19, virus no identificado (U07.2)"
+116110,7,7404,16,Hospital,Servicio de Salud,TERCIARIO,URGENCIA HOSPITALARIA (UEH),Mediana Complejidad,2022,32,6,12,Neumonía (J12-J18)
+200623,6,6310,15,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2022,33,9,37,"Otra causa respiratoria (J22, J30-J39, J47, J60-J98)"
+123104,10,10306,23,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2023,31,9,2,"Otra causa respiratoria (J22, J30-J39, J47, J60-J98)"
+200113,5,5109,7,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2024,18,4,249,IRA alta (J00-J06)
+116823,7,7401,16,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2014,34,8,8,Crisis obstructiva bronquial (J40-J46)
+200932,13,13202,14,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2016,17,7,28,Bronquitis/Bronquiolitis aguda (J20-J21)
+116806,7,7101,16,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2016,52,5,0,Influenza (J09-J11)
+107105,5,5401,7,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2016,49,5,1,Influenza (J09-J11)
+126800,12,12101,26,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2014,14,6,0,Neumonía (J12-J18)
+113818,13,13404,13,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2018,19,6,4,Neumonía (J12-J18)
+200149,16,16101,17,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2024,28,34,0,"COVID-19, virus no identificado (U07.2)"
+119101,8,8111,19,Hospital,Servicio de Salud,TERCIARIO,URGENCIA HOSPITALARIA (UEH),Alta Complejidad,2023,21,6,32,Neumonía (J12-J18)
+113826,13,13109,13,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2021,18,35,0,"COVID-19, virus identificado (U07.1)"
+200140,13,13117,10,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2020,22,7,1,Bronquitis/Bronquiolitis aguda (J20-J21)
+123102,10,10305,23,Hospital,Servicio de Salud,SECUNDARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2025,26,7,22,Bronquitis/Bronquiolitis aguda (J20-J21)
+200739,4,4305,5,Servicio de Urgencia Rural (SUR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SUR),Baja Complejidad,2015,3,5,0,Influenza (J09-J11)
+200974,8,8303,20,Servicio de Urgencia Rural (SUR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SUR),Baja Complejidad,2023,51,35,0,"COVID-19, virus identificado (U07.1)"
+200114,5,5501,7,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2016,28,4,158,IRA alta (J00-J06)
+200135,13,13501,10,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2019,3,4,168,IRA alta (J00-J06)
+105826,4,4101,5,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2021,50,4,34,IRA alta (J00-J06)
+106800,5,5101,6,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2023,23,4,154,IRA alta (J00-J06)
+114817,13,13112,14,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2025,46,4,173,IRA alta (J00-J06)
+200124,13,13124,10,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2023,49,8,10,Crisis obstructiva bronquial (J40-J46)
+122100,14,14101,22,Hospital,Servicio de Salud,TERCIARIO,URGENCIA HOSPITALARIA (UEH),Alta Complejidad,2021,15,7,2,Bronquitis/Bronquiolitis aguda (J20-J21)
+200172,8,8205,28,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2022,29,5,0,Influenza (J09-J11)
+122105,14,14204,22,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2014,6,6,6,Neumonía (J12-J18)
+123100,10,10301,23,Hospital,Servicio de Salud,TERCIARIO,URGENCIA HOSPITALARIA (UEH),Alta Complejidad,2021,9,35,13,"COVID-19, virus identificado (U07.1)"
+120106,8,8311,20,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2025,8,34,0,"COVID-19, virus no identificado (U07.2)"
+201069,12,12101,26,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2025,40,6,3,Neumonía (J12-J18)
+110891,13,13601,10,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2016,35,4,263,IRA alta (J00-J06)
+200757,7,7301,16,Servicio de Urgencia Rural (SUR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SUR),Baja Complejidad,2025,35,4,82,IRA alta (J00-J06)
+118806,8,8101,18,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2023,20,8,12,Crisis obstructiva bronquial (J40-J46)
+107102,5,5801,7,Hospital,Servicio de Salud,TERCIARIO,URGENCIA HOSPITALARIA (UEH),Alta Complejidad,2017,19,7,37,Bronquitis/Bronquiolitis aguda (J20-J21)
+200479,13,13601,10,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2020,6,7,19,Bronquitis/Bronquiolitis aguda (J20-J21)
+109805,13,13107,9,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2018,30,5,0,Influenza (J09-J11)
+200860,6,6102,15,Servicio de Urgencia Rural (SUR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SUR),Baja Complejidad,2023,48,35,0,"COVID-19, virus identificado (U07.1)"
+110860,13,13128,10,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2025,52,6,4,Neumonía (J12-J18)
+200562,6,6115,15,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2020,15,9,2,"Otra causa respiratoria (J22, J30-J39, J47, J60-J98)"
+113823,13,13105,13,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2015,23,7,76,Bronquitis/Bronquiolitis aguda (J20-J21)
+114809,13,13112,14,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2022,32,5,0,Influenza (J09-J11)
+115109,6,6305,15,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2021,48,35,0,"COVID-19, virus identificado (U07.1)"
+116832,7,7102,16,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2014,15,8,25,Crisis obstructiva bronquial (J40-J46)
+122102,14,14104,22,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2015,45,8,11,Crisis obstructiva bronquial (J40-J46)
+200950,3,3202,4,Servicio de Urgencia Rural (SUR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SUR),Baja Complejidad,2022,48,5,0,Influenza (J09-J11)
+200851,6,6107,15,Servicio de Urgencia Rural (SUR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SUR),Baja Complejidad,2016,52,6,2,Neumonía (J12-J18)
+110130,13,13601,10,Hospital,Servicio de Salud,TERCIARIO,URGENCIA HOSPITALARIA (UEH),Mediana Complejidad,2018,18,6,10,Neumonía (J12-J18)
+113130,13,13130,13,Hospital,Servicio de Salud,TERCIARIO,URGENCIA HOSPITALARIA (UEH),Alta Complejidad,2018,39,6,22,Neumonía (J12-J18)
+123101,10,10303,23,Hospital,Servicio de Salud,TERCIARIO,URGENCIA HOSPITALARIA (UEH),Mediana Complejidad,2024,1,9,7,"Otra causa respiratoria (J22, J30-J39, J47, J60-J98)"
+118100,8,8101,18,Hospital,Servicio de Salud,TERCIARIO,URGENCIA HOSPITALARIA (UEH),Alta Complejidad,2025,1,7,11,Bronquitis/Bronquiolitis aguda (J20-J21)
+119803,8,8110,19,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2024,16,6,0,Neumonía (J12-J18)
+125101,11,11201,25,Hospital,Servicio de Salud,TERCIARIO,URGENCIA HOSPITALARIA (UEH),Mediana Complejidad,2022,19,9,1,"Otra causa respiratoria (J22, J30-J39, J47, J60-J98)"
+103102,2,2301,3,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2023,45,9,46,"Otra causa respiratoria (J22, J30-J39, J47, J60-J98)"
+118818,8,8108,18,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2020,4,8,2,Crisis obstructiva bronquial (J40-J46)
+200156,9,9101,21,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2025,51,8,6,Crisis obstructiva bronquial (J40-J46)
+112813,13,13118,12,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2024,35,34,0,"COVID-19, virus no identificado (U07.2)"
+116802,7,7301,16,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2022,48,4,462,IRA alta (J00-J06)
+114819,13,13112,14,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2019,11,8,2,Crisis obstructiva bronquial (J40-J46)
+200147,6,6115,15,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2020,21,8,0,Crisis obstructiva bronquial (J40-J46)
+116102,7,7304,16,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2021,21,8,3,Crisis obstructiva bronquial (J40-J46)
+114819,13,13112,14,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2025,36,8,9,Crisis obstructiva bronquial (J40-J46)
+108100,5,5701,8,Hospital,Servicio de Salud,TERCIARIO,URGENCIA HOSPITALARIA (UEH),Alta Complejidad,2014,11,7,16,Bronquitis/Bronquiolitis aguda (J20-J21)
+103806,2,2201,3,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2019,4,7,7,Bronquitis/Bronquiolitis aguda (J20-J21)
+200179,8,8301,20,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2026,10,6,2,Neumonía (J12-J18)
+124145,10,10402,24,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2014,38,4,23,IRA alta (J00-J06)
+200098,2,2101,3,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2017,8,4,107,IRA alta (J00-J06)
+107108,5,5107,7,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2022,39,4,131,IRA alta (J00-J06)
+106827,5,5602,6,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2024,51,4,116,IRA alta (J00-J06)
+200174,9,9201,29,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2014,3,8,4,Crisis obstructiva bronquial (J40-J46)
+200912,2,2103,3,Servicio de Urgencia Rural (SUR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SUR),Baja Complejidad,2023,12,8,0,Crisis obstructiva bronquial (J40-J46)
+113815,13,13401,13,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2021,49,34,0,"COVID-19, virus no identificado (U07.2)"
+122200,14,14106,22,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2019,45,7,17,Bronquitis/Bronquiolitis aguda (J20-J21)
+105102,4,4301,5,Hospital,Servicio de Salud,TERCIARIO,URGENCIA HOSPITALARIA (UEH),Alta Complejidad,2021,40,7,2,Bronquitis/Bronquiolitis aguda (J20-J21)
+200841,16,16207,17,Servicio de Urgencia Rural (SUR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SUR),Baja Complejidad,2024,21,5,3,Influenza (J09-J11)
+115850,6,6101,15,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Servicio de Salud,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2023,43,4,297,IRA alta (J00-J06)
+200077,8,8106,18,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2019,48,8,0,Crisis obstructiva bronquial (J40-J46)
+129107,9,9203,29,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2020,30,35,0,"COVID-19, virus identificado (U07.1)"
+200114,5,5501,7,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2024,39,6,1,Neumonía (J12-J18)
+200848,4,4102,5,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2025,36,6,8,Neumonía (J12-J18)
+116106,7,7103,16,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2019,19,9,0,"Otra causa respiratoria (J22, J30-J39, J47, J60-J98)"
+200623,6,6310,15,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2019,49,7,10,Bronquitis/Bronquiolitis aguda (J20-J21)
+108104,5,5705,8,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2020,20,7,2,Bronquitis/Bronquiolitis aguda (J20-J21)
+108102,5,5703,8,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2021,22,7,1,Bronquitis/Bronquiolitis aguda (J20-J21)
+109101,13,13108,9,Hospital,Servicio de Salud,TERCIARIO,URGENCIA HOSPITALARIA (UEH),Alta Complejidad,2023,44,8,27,Crisis obstructiva bronquial (J40-J46)
+110110,13,13101,10,Hospital,Servicio de Salud,TERCIARIO,URGENCIA ESPECIALIZADA,Alta Complejidad,2024,48,8,0,Crisis obstructiva bronquial (J40-J46)
+110130,13,13601,10,Hospital,Servicio de Salud,TERCIARIO,URGENCIA HOSPITALARIA (UEH),Mediana Complejidad,2022,5,35,0,"COVID-19, virus identificado (U07.1)"
+120103,8,8306,20,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2021,32,7,3,Bronquitis/Bronquiolitis aguda (J20-J21)
+200877,13,13505,10,Servicio de Urgencia Rural (SUR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SUR),Baja Complejidad,2021,15,5,0,Influenza (J09-J11)
+111100,13,13101,11,Hospital,Servicio de Salud,TERCIARIO,URGENCIA HOSPITALARIA (UEH),Alta Complejidad,2017,24,9,172,"Otra causa respiratoria (J22, J30-J39, J47, J60-J98)"
+200925,5,5604,6,Servicio de Urgencia Rural (SUR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SUR),Baja Complejidad,2025,5,7,0,Bronquitis/Bronquiolitis aguda (J20-J21)
+128113,8,8202,28,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2015,22,5,3,Influenza (J09-J11)
+200781,7,7406,16,Servicio de Urgencia Rural (SUR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SUR),Baja Complejidad,2024,21,6,0,Neumonía (J12-J18)
+114807,13,13131,14,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2014,24,4,27,IRA alta (J00-J06)
+200164,14,14203,22,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2014,28,8,1,Crisis obstructiva bronquial (J40-J46)
+114811,13,13112,14,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2015,31,8,72,Crisis obstructiva bronquial (J40-J46)
+117107,16,16104,17,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2022,36,34,0,"COVID-19, virus no identificado (U07.2)"
+200268,5,5101,6,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Servicio de Salud,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2019,51,5,4,Influenza (J09-J11)
+116811,7,7404,16,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2022,16,5,0,Influenza (J09-J11)
+200175,9,9211,29,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2021,47,6,2,Neumonía (J12-J18)
+119804,8,8107,19,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2016,5,9,4,"Otra causa respiratoria (J22, J30-J39, J47, J60-J98)"
+117106,16,16201,17,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2020,8,9,1,"Otra causa respiratoria (J22, J30-J39, J47, J60-J98)"
+200996,5,5401,7,Servicio de Atención Primaria de Urgencia (SAPU),Municipal ,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2025,12,35,0,"COVID-19, virus identificado (U07.1)"
+115105,6,6117,15,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2014,13,8,35,Crisis obstructiva bronquial (J40-J46)
+105108,4,4203,5,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2021,38,35,0,"COVID-19, virus identificado (U07.1)"
+200176,10,10201,33,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2024,5,35,0,"COVID-19, virus identificado (U07.1)"
+107103,5,5502,7,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2024,51,9,14,"Otra causa respiratoria (J22, J30-J39, J47, J60-J98)"
+114103,13,13131,14,Hospital,Servicio de Salud,TERCIARIO,URGENCIA HOSPITALARIA (UEH),Alta Complejidad,2016,16,4,150,IRA alta (J00-J06)
+200148,7,7401,16,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2021,36,4,2,IRA alta (J00-J06)
+200152,9,9101,21,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2023,35,4,88,IRA alta (J00-J06)
+200143,13,13123,12,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2025,19,4,76,IRA alta (J00-J06)
+105100,4,4101,5,Hospital,Servicio de Salud,TERCIARIO,URGENCIA HOSPITALARIA (UEH),Alta Complejidad,2014,29,7,46,Bronquitis/Bronquiolitis aguda (J20-J21)
+118105,8,8102,18,Hospital,Servicio de Salud,TERCIARIO,URGENCIA HOSPITALARIA (UEH),Alta Complejidad,2017,20,7,128,Bronquitis/Bronquiolitis aguda (J20-J21)
+107106,5,5402,7,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2021,44,7,1,Bronquitis/Bronquiolitis aguda (J20-J21)
+119802,8,8110,19,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2024,4,5,1,Influenza (J09-J11)
+200130,13,13605,10,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2024,32,5,0,Influenza (J09-J11)
+200127,13,13603,10,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2022,6,6,3,Neumonía (J12-J18)
+116840,7,7101,16,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2023,20,4,630,IRA alta (J00-J06)
+117828,16,16103,17,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2019,31,7,31,Bronquitis/Bronquiolitis aguda (J20-J21)
+122101,14,14102,22,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2020,41,7,0,Bronquitis/Bronquiolitis aguda (J20-J21)
+114807,13,13131,14,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2022,41,7,36,Bronquitis/Bronquiolitis aguda (J20-J21)
+128110,8,8201,28,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2023,37,7,40,Bronquitis/Bronquiolitis aguda (J20-J21)
+107821,5,5502,7,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2025,13,7,37,Bronquitis/Bronquiolitis aguda (J20-J21)
+106827,5,5602,6,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2015,42,5,0,Influenza (J09-J11)
+200123,13,13501,10,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2015,6,4,169,IRA alta (J00-J06)
+200929,9,9104,21,Servicio de Urgencia Rural (SUR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SUR),Baja Complejidad,2022,16,8,2,Crisis obstructiva bronquial (J40-J46)
+105825,4,4101,5,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2020,19,35,0,"COVID-19, virus identificado (U07.1)"
+114807,13,13131,14,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2026,12,6,8,Neumonía (J12-J18)
+200143,13,13123,12,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2016,10,9,3,"Otra causa respiratoria (J22, J30-J39, J47, J60-J98)"
+106827,5,5602,6,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2019,13,9,160,"Otra causa respiratoria (J22, J30-J39, J47, J60-J98)"
+120107,8,8312,20,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2014,16,4,81,IRA alta (J00-J06)
+105805,4,4102,5,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2021,46,5,2,Influenza (J09-J11)
+116103,7,7302,16,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2024,6,5,0,Influenza (J09-J11)
+201003,5,5401,7,Servicio de Urgencia Rural (SUR),Municipal ,PRIMARIO,URGENCIA AMBULATORIA (SUR),Baja Complejidad,2021,14,35,0,"COVID-19, virus identificado (U07.1)"
+200348,2,2201,3,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2025,36,34,0,"COVID-19, virus no identificado (U07.2)"
+200179,8,8301,20,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2020,53,4,2,IRA alta (J00-J06)
+114806,13,13111,14,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2021,39,4,55,IRA alta (J00-J06)
+200106,5,5601,6,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2015,10,8,11,Crisis obstructiva bronquial (J40-J46)
+200179,8,8301,20,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2024,24,8,7,Crisis obstructiva bronquial (J40-J46)
+114806,13,13111,14,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2025,10,8,13,Crisis obstructiva bronquial (J40-J46)
+115805,6,6108,15,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2024,29,5,1,Influenza (J09-J11)
+200159,9,9101,21,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2018,11,6,1,Neumonía (J12-J18)
+125104,11,11202,25,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2021,49,9,0,"Otra causa respiratoria (J22, J30-J39, J47, J60-J98)"
+107105,5,5401,7,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2023,10,9,2,"Otra causa respiratoria (J22, J30-J39, J47, J60-J98)"
+115114,6,6203,15,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2024,35,9,73,"Otra causa respiratoria (J22, J30-J39, J47, J60-J98)"
+112100,13,13123,12,Hospital,Servicio de Salud,TERCIARIO,URGENCIA HOSPITALARIA (UEH),Alta Complejidad,2022,4,7,1,Bronquitis/Bronquiolitis aguda (J20-J21)
+200124,13,13124,10,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2018,17,6,4,Neumonía (J12-J18)
+200760,7,7304,16,Servicio de Urgencia Rural (SUR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SUR),Baja Complejidad,2023,7,6,1,Neumonía (J12-J18)
+200855,6,6302,15,Servicio de Urgencia Rural (SUR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SUR),Baja Complejidad,2018,41,9,11,"Otra causa respiratoria (J22, J30-J39, J47, J60-J98)"
+113190,13,13401,13,Hospital,Delegados ,TERCIARIO,URGENCIA HOSPITALARIA (UEH),Alta Complejidad,2025,29,4,3,IRA alta (J00-J06)
+200750,10,10306,23,Servicio de Urgencia Rural (SUR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SUR),Baja Complejidad,2024,31,34,0,"COVID-19, virus no identificado (U07.2)"
+115114,6,6203,15,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2015,20,7,6,Bronquitis/Bronquiolitis aguda (J20-J21)
+111806,13,13106,11,Servicio de Atención Primaria de Urgencia (SAPU),Servicio de Salud,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2021,10,7,1,Bronquitis/Bronquiolitis aguda (J20-J21)
+200733,10,10203,33,Servicio de Urgencia Rural (SUR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SUR),Baja Complejidad,2017,3,5,0,Influenza (J09-J11)
+200095,15,15101,1,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2023,24,5,0,Influenza (J09-J11)
+102800,1,1101,2,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2021,32,35,0,"COVID-19, virus identificado (U07.1)"
+123800,10,10301,23,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2022,18,35,0,"COVID-19, virus identificado (U07.1)"
+200978,8,8314,20,Servicio de Urgencia Rural (SUR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SUR),Baja Complejidad,2026,5,35,0,"COVID-19, virus identificado (U07.1)"
+200830,16,16108,17,Servicio de Urgencia Rural (SUR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SUR),Baja Complejidad,2022,11,34,0,"COVID-19, virus no identificado (U07.2)"
+105101,4,4102,5,Hospital,Servicio de Salud,TERCIARIO,URGENCIA HOSPITALARIA (UEH),Alta Complejidad,2024,3,34,0,"COVID-19, virus no identificado (U07.2)"
+122105,14,14204,22,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2019,38,4,110,IRA alta (J00-J06)
+110860,13,13128,10,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2021,18,4,49,IRA alta (J00-J06)
+114105,13,13110,14,Hospital,Servicio de Salud,TERCIARIO,URGENCIA HOSPITALARIA (UEH),Alta Complejidad,2024,23,5,33,Influenza (J09-J11)
+200758,7,7301,16,Servicio de Urgencia Rural (SUR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SUR),Baja Complejidad,2020,33,6,0,Neumonía (J12-J18)
+200767,7,7101,16,Servicio de Urgencia Rural (SUR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SUR),Baja Complejidad,2022,15,9,0,"Otra causa respiratoria (J22, J30-J39, J47, J60-J98)"
+126801,12,12101,26,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2014,32,4,148,IRA alta (J00-J06)
+200839,16,16108,17,Servicio de Urgencia Rural (SUR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SUR),Baja Complejidad,2024,4,34,0,"COVID-19, virus no identificado (U07.2)"
+114817,13,13112,14,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2019,21,4,464,IRA alta (J00-J06)
+200732,10,10209,33,Servicio de Urgencia Rural (SUR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SUR),Baja Complejidad,2025,37,4,42,IRA alta (J00-J06)
+110867,13,13604,10,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2014,48,8,3,Crisis obstructiva bronquial (J40-J46)
+115113,6,6304,15,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2024,13,8,2,Crisis obstructiva bronquial (J40-J46)
+122200,14,14106,22,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2024,20,8,13,Crisis obstructiva bronquial (J40-J46)
+118826,8,8105,18,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2025,6,8,5,Crisis obstructiva bronquial (J40-J46)
+114101,13,13201,14,Hospital,Servicio de Salud,TERCIARIO,URGENCIA HOSPITALARIA (UEH),Alta Complejidad,2016,37,7,125,Bronquitis/Bronquiolitis aguda (J20-J21)
+115850,6,6101,15,Servicio de Atención Primaria de Urgencia de Alta Resolutividad (SAR),Servicio de Salud,PRIMARIO,URGENCIA AMBULATORIA (SAR),Baja Complejidad,2014,34,5,0,Influenza (J09-J11)
+133150,10,10201,33,Hospital,Servicio de Salud,TERCIARIO,URGENCIA HOSPITALARIA (UEH),Alta Complejidad,2015,16,5,0,Influenza (J09-J11)
+200736,10,10202,33,Servicio de Urgencia Rural (SUR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SUR),Baja Complejidad,2019,50,5,0,Influenza (J09-J11)
+129100,9,9201,29,Hospital,Servicio de Salud,TERCIARIO,URGENCIA HOSPITALARIA (UEH),Alta Complejidad,2016,52,6,12,Neumonía (J12-J18)
