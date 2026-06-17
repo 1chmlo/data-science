@@ -1,0 +1,6 @@
+EstablecimientoCodigo,RegionCodigo,ComunaCodigo,ServicioSaludCodigo,TipoEstablecimiento,DependenciaAdministrativa,NivelAtencion,TipoUrgencia,NivelComplejidad,Anio,SemanaEstadistica,OrdenCausa,Causa,NumTotal
+122101,14,14102,22,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2014,16,3,TOTAL CAUSA SISTEMA  RESPIRATORIO (J00-J98),53
+113818,13,13404,13,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2019,12,3,TOTAL CAUSA SISTEMA  RESPIRATORIO (J00-J98),259
+114825,13,13111,14,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2020,35,3,TOTAL CAUSA SISTEMA  RESPIRATORIO (J00-J98),20
+200118,13,13103,10,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2023,29,5,Influenza (J09-J11),0
+200165,14,14101,22,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2026,3,5,Influenza (J09-J11),4
