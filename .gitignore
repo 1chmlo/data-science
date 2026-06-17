@@ -1,6 +1,6 @@
 .venv*
 venv/*
 dataset/*
-
+notebooks/dataset_limpios/*
 *.parquet
 */*.parquet
