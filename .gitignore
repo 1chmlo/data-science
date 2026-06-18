@@ -4,3 +4,4 @@ dataset/*
 notebooks/dataset_limpios/*
 *.parquet
 */*.parquet
+resultados/*.csv
