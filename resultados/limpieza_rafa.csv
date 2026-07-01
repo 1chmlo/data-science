@@ -1,6 +1,0 @@
-EstablecimientoCodigo,RegionCodigo,ComunaCodigo,ServicioSaludCodigo,TipoEstablecimiento,DependenciaAdministrativa,NivelAtencion,TipoUrgencia,NivelComplejidad,Anio,SemanaEstadistica,OrdenCausa,Causa,NumTotal
-200144,13,13110,14,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2016,2,9,"Otra causa respiratoria no contenidas en las categorías anteriores (J22; J30-J39, J47, J60-J98)",3
-102807,1,1107,2,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2014,36,4,IRA Alta (J00-J06),93
-200177,8,8301,20,Servicio de Atención Primaria de Urgencia (SAPU),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SAPU),Baja Complejidad,2025,25,4,IRA Alta (J00-J06),57
-122105,14,14204,22,Hospital,Servicio de Salud,PRIMARIO,URGENCIA HOSPITALARIA (UEH),Baja Complejidad,2018,13,8,Crisis obstructiva bronquial (J40-J46),6
-200764,7,7306,16,Servicio de Urgencia Rural (SUR),Municipal,PRIMARIO,URGENCIA AMBULATORIA (SUR),Baja Complejidad,2022,45,11,"TOTAL ATENCIONES POR COVID-19, Virus Identificado U07.1",33

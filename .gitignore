@@ -1,7 +1,7 @@
 .venv*
+/.venv/*
 venv/*
-dataset/*
-notebooks/dataset_limpios/*
-*.parquet
-*/*.parquet
-resultados/*.csv
+Antiguo/dataset/*
+Antiguo/notebooks/dataset_limpios/*
+
+Antiguo/resultados/*.csv
