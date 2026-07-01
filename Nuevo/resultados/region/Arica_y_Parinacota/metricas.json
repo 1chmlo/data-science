@@ -1,0 +1,181 @@
+{
+  "series_id": "Arica_y_Parinacota",
+  "level": "region",
+  "best_model": "arima_fourier",
+  "modelo_guardado": "arima_fourier",
+  "orders": {
+    "arima_fourier": [
+      2,
+      1,
+      2
+    ],
+    "sarimax": [
+      2,
+      1,
+      3
+    ]
+  },
+  "metrics_por_modelo": {
+    "seasonal_naive": {
+      "MAE": 460.40384615384613,
+      "RMSE": 598.1479267770576,
+      "MAPE": 22.960868435927743,
+      "sMAPE": 19.70383289417287,
+      "WAPE": 22.929137176405238,
+      "MASE": 0.851755554073901
+    },
+    "arima_fourier": {
+      "MAE": 315.68779999463146,
+      "RMSE": 462.2810509951843,
+      "MAPE": 17.13711421361793,
+      "sMAPE": 15.957968555089844,
+      "WAPE": 15.721955694904691,
+      "MASE": 0.5840282161955435
+    },
+    "sarimax": {
+      "MAE": 322.8338107592417,
+      "RMSE": 482.1171457426842,
+      "MAPE": 17.21485865268602,
+      "sMAPE": 16.040932233175106,
+      "WAPE": 16.077842950092965,
+      "MASE": 0.597248467088484
+    }
+  },
+  "metrics_campeon": {
+    "MAE": 315.68779999463146,
+    "RMSE": 462.2810509951843,
+    "MAPE": 17.13711421361793,
+    "sMAPE": 15.957968555089844,
+    "WAPE": 15.721955694904691,
+    "MASE": 0.5840282161955435
+  },
+  "metrics_modelo_guardado": {
+    "MAE": 315.68779999463146,
+    "RMSE": 462.2810509951843,
+    "MAPE": 17.13711421361793,
+    "sMAPE": 15.957968555089844,
+    "WAPE": 15.721955694904691,
+    "MASE": 0.5840282161955435
+  },
+  "prediccion_futura": [
+    {
+      "fecha": "2026-05-11",
+      "semana": 18,
+      "prediccion": 2744.06,
+      "ic_inferior": 2035.48,
+      "ic_superior": 3699.19
+    },
+    {
+      "fecha": "2026-05-18",
+      "semana": 19,
+      "prediccion": 2825.32,
+      "ic_inferior": 1862.61,
+      "ic_superior": 4285.35
+    },
+    {
+      "fecha": "2026-05-25",
+      "semana": 20,
+      "prediccion": 2887.75,
+      "ic_inferior": 1779.26,
+      "ic_superior": 4686.42
+    },
+    {
+      "fecha": "2026-06-01",
+      "semana": 21,
+      "prediccion": 2925.32,
+      "ic_inferior": 1738.16,
+      "ic_superior": 4922.82
+    }
+  ],
+  "nota_futuro": null,
+  "ic_nivel": "95%",
+  "diagnostico_residuos": {
+    "n": 644,
+    "mean": 0.013349624694565987,
+    "std": 0.34833344952905954,
+    "ljung_box": {
+      "lags": 10,
+      "stat": 103.92083829019775,
+      "pvalue": 8.921193911635055e-18
+    },
+    "jarque_bera": {
+      "stat": 1609331.305950199,
+      "pvalue": 0.0,
+      "skew": 8.331644368603477,
+      "kurtosis": 247.33054359476347
+    },
+    "interpretacion": {
+      "residuos_sin_autocorrelacion": false,
+      "residuos_normales": false,
+      "sesgo_bajo": true
+    }
+  },
+  "n_weeks": 644,
+  "n_folds": 13,
+  "exogenas_meteo": [
+    "temp_promedio_semanal",
+    "humedad_relativa_promedio_porcentaje",
+    "precipitacion_promedio_diario_mm",
+    "radiacion_solar_media_MJ_m2"
+  ],
+  "target_gaps_imputados": 0,
+  "exog_gaps_imputados": {
+    "temp_promedio_semanal": 2,
+    "humedad_relativa_promedio_porcentaje": 2,
+    "precipitacion_promedio_diario_mm": 2,
+    "radiacion_solar_media_MJ_m2": 2
+  },
+  "warnings": [
+    "dataset_Arica_y_Parinacota.parquet: en 2026 se descartan semanas fuera de secuencia [53] (artefacto, p. ej. semana 53 espuria).",
+    "dataset_Arica_y_Parinacota.parquet: descartada semana final 18 por incompleta (total 447 < 50% de la mediana reciente 2468)."
+  ],
+  "config": {
+    "level": "region",
+    "target": "NumTotal",
+    "log_transform": true,
+    "meteo_exog": [
+      "temp_promedio_semanal",
+      "humedad_relativa_promedio_porcentaje",
+      "precipitacion_promedio_diario_mm",
+      "radiacion_solar_media_MJ_m2"
+    ],
+    "drop_exog": [
+      "pm2_5_ug_m3",
+      "pm10_ug_m3"
+    ],
+    "standardize_exog": true,
+    "fourier_period": 52.17857142857143,
+    "fourier_terms": 2,
+    "horizon": 4,
+    "step": 4,
+    "test_weeks": 52,
+    "min_train_weeks": 156,
+    "ci_alpha": 0.05,
+    "p_range": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "q_range": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "d_max": 2,
+    "seasonal_order": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "season": 52,
+    "max_gap_weeks": 6,
+    "partial_week_frac": 0.5,
+    "n_jobs": 4,
+    "random_seed": 42,
+    "make_plots": true,
+    "out_dir": "resultados"
+  }
+}

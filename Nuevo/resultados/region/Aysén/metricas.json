@@ -1,0 +1,181 @@
+{
+  "series_id": "Aysén",
+  "level": "region",
+  "best_model": "sarimax",
+  "modelo_guardado": "sarimax",
+  "orders": {
+    "arima_fourier": [
+      3,
+      0,
+      2
+    ],
+    "sarimax": [
+      3,
+      0,
+      3
+    ]
+  },
+  "metrics_por_modelo": {
+    "seasonal_naive": {
+      "MAE": 924.7307692307693,
+      "RMSE": 1302.2582604549211,
+      "MAPE": 15.563307467625156,
+      "sMAPE": 15.436758037120363,
+      "WAPE": 15.350041339066536,
+      "MASE": 0.7250157755130532
+    },
+    "arima_fourier": {
+      "MAE": 568.51866259145,
+      "RMSE": 805.0682685974681,
+      "MAPE": 11.557269322487992,
+      "sMAPE": 11.365200600778145,
+      "WAPE": 9.437108900430438,
+      "MASE": 0.4457351401805924
+    },
+    "sarimax": {
+      "MAE": 555.7483991353965,
+      "RMSE": 804.7320089555069,
+      "MAPE": 11.546292030339927,
+      "sMAPE": 11.40021944768312,
+      "WAPE": 9.225129285948427,
+      "MASE": 0.43572288280669924
+    }
+  },
+  "metrics_campeon": {
+    "MAE": 555.7483991353965,
+    "RMSE": 804.7320089555069,
+    "MAPE": 11.546292030339927,
+    "sMAPE": 11.40021944768312,
+    "WAPE": 9.225129285948427,
+    "MASE": 0.43572288280669924
+  },
+  "metrics_modelo_guardado": {
+    "MAE": 555.7483991353965,
+    "RMSE": 804.7320089555069,
+    "MAPE": 11.546292030339927,
+    "sMAPE": 11.40021944768312,
+    "WAPE": 9.225129285948427,
+    "MASE": 0.43572288280669924
+  },
+  "prediccion_futura": [
+    {
+      "fecha": "2026-05-11",
+      "semana": 18,
+      "prediccion": 6382.38,
+      "ic_inferior": 4954.76,
+      "ic_superior": 8221.25
+    },
+    {
+      "fecha": "2026-05-18",
+      "semana": 19,
+      "prediccion": 7128.94,
+      "ic_inferior": 4924.69,
+      "ic_superior": 10319.6
+    },
+    {
+      "fecha": "2026-05-25",
+      "semana": 20,
+      "prediccion": 7612.77,
+      "ic_inferior": 4993.26,
+      "ic_superior": 11606.2
+    },
+    {
+      "fecha": "2026-06-01",
+      "semana": 21,
+      "prediccion": 7999.37,
+      "ic_inferior": 5128.45,
+      "ic_superior": 12477.11
+    }
+  ],
+  "nota_futuro": "meteo futura estimada con climatologia (promedio por semana-del-anio).",
+  "ic_nivel": "95%",
+  "diagnostico_residuos": {
+    "n": 644,
+    "mean": 0.00828638237819781,
+    "std": 0.3936186218537511,
+    "ljung_box": {
+      "lags": 10,
+      "stat": 83.09304971782868,
+      "pvalue": 1.2396580266364764e-13
+    },
+    "jarque_bera": {
+      "stat": 3107905.8937554467,
+      "pvalue": 0.0,
+      "skew": 13.488234287025426,
+      "kurtosis": 342.2563190786291
+    },
+    "interpretacion": {
+      "residuos_sin_autocorrelacion": false,
+      "residuos_normales": false,
+      "sesgo_bajo": true
+    }
+  },
+  "n_weeks": 644,
+  "n_folds": 13,
+  "exogenas_meteo": [
+    "temp_promedio_semanal",
+    "humedad_relativa_promedio_porcentaje",
+    "precipitacion_promedio_diario_mm",
+    "radiacion_solar_media_MJ_m2"
+  ],
+  "target_gaps_imputados": 0,
+  "exog_gaps_imputados": {
+    "temp_promedio_semanal": 2,
+    "humedad_relativa_promedio_porcentaje": 2,
+    "precipitacion_promedio_diario_mm": 2,
+    "radiacion_solar_media_MJ_m2": 2
+  },
+  "warnings": [
+    "dataset_Aysén.parquet: en 2026 se descartan semanas fuera de secuencia [53] (artefacto, p. ej. semana 53 espuria).",
+    "dataset_Aysén.parquet: descartada semana final 18 por incompleta (total 1087 < 50% de la mediana reciente 5312)."
+  ],
+  "config": {
+    "level": "region",
+    "target": "NumTotal",
+    "log_transform": true,
+    "meteo_exog": [
+      "temp_promedio_semanal",
+      "humedad_relativa_promedio_porcentaje",
+      "precipitacion_promedio_diario_mm",
+      "radiacion_solar_media_MJ_m2"
+    ],
+    "drop_exog": [
+      "pm2_5_ug_m3",
+      "pm10_ug_m3"
+    ],
+    "standardize_exog": true,
+    "fourier_period": 52.17857142857143,
+    "fourier_terms": 2,
+    "horizon": 4,
+    "step": 4,
+    "test_weeks": 52,
+    "min_train_weeks": 156,
+    "ci_alpha": 0.05,
+    "p_range": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "q_range": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "d_max": 2,
+    "seasonal_order": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "season": 52,
+    "max_gap_weeks": 6,
+    "partial_week_frac": 0.5,
+    "n_jobs": 4,
+    "random_seed": 42,
+    "make_plots": true,
+    "out_dir": "resultados"
+  }
+}

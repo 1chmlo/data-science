@@ -1,0 +1,10 @@
+# Stack del pipeline de forecasting. Versiones probadas en Python 3.14 (WSL Ubuntu).
+# Se fija el minor para reproducibilidad; ajustar si se usa otra version de Python.
+numpy>=2.2,<2.6
+pandas>=2.2,<3.1
+pyarrow>=16
+scipy>=1.13
+matplotlib>=3.8
+statsmodels>=0.14
+scikit-learn>=1.4
+joblib>=1.3

@@ -1,0 +1,2 @@
+series_id,level,status,best_model,modelo_guardado,n_weeks,n_folds,order,message,MAE,RMSE,MAPE,sMAPE,WAPE,MASE
+200122,hospital,ok,arima_fourier,arima_fourier,644,13,"[2, 1, 2]","dataset_hospital_200122.parquet: en 2026 se descartan semanas fuera de secuencia [53] (artefacto, p. ej. semana 53 espuria).; dataset_hospital_200122.parquet: descartada semana final 18 por incompleta (total 142 < 50% de la mediana reciente 598).",78.55339865482588,111.51316433949938,17.170259861348107,16.82613422706178,15.287910213896275,0.4336949459513126

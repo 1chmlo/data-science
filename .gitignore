@@ -5,3 +5,19 @@ Antiguo/dataset/*
 Antiguo/notebooks/dataset_limpios/*
 
 Antiguo/resultados/*.csv
+
+# Pipeline de forecasting (Nuevo/)
+Nuevo/.venv/
+# Resultados: se VERSIONAN metricas.json + graficos (los necesita el frontend/Docker);
+# se ignoran los modelos serializados (pesan mucho y el frontend no los usa).
+Nuevo/resultados/**/modelo.pkl
+Nuevo/resultados_test/
+Nuevo/datasets_regionales/
+Nuevo/datasets_hospitales/
+**/__pycache__/
+
+# Sitio web de resultados: index.html y build_web.py se versionan; lo generado no.
+Nuevo/web/data.js
+Nuevo/web/assets/
+
+.claude

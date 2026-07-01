@@ -1,0 +1,9 @@
+# Levanta el sitio de resultados:  docker compose up --build  ->  http://localhost:8080
+services:
+  web:
+    build: .
+    image: forecasting-web
+    container_name: forecasting-web
+    ports:
+      - "8080:80"
+    restart: unless-stopped

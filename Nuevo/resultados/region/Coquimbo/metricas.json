@@ -1,0 +1,181 @@
+{
+  "series_id": "Coquimbo",
+  "level": "region",
+  "best_model": "arima_fourier",
+  "modelo_guardado": "arima_fourier",
+  "orders": {
+    "arima_fourier": [
+      2,
+      0,
+      0
+    ],
+    "sarimax": [
+      2,
+      0,
+      0
+    ]
+  },
+  "metrics_por_modelo": {
+    "seasonal_naive": {
+      "MAE": 1132.326923076923,
+      "RMSE": 1411.1783742128964,
+      "MAPE": 15.485200769423338,
+      "sMAPE": 14.517014089841776,
+      "WAPE": 16.474126715442832,
+      "MASE": 0.7650034386459146
+    },
+    "arima_fourier": {
+      "MAE": 812.5885305849905,
+      "RMSE": 1049.380225190924,
+      "MAPE": 13.417778129279782,
+      "sMAPE": 13.063746746210537,
+      "WAPE": 11.822280427631608,
+      "MASE": 0.5489872292469715
+    },
+    "sarimax": {
+      "MAE": 818.0551066799076,
+      "RMSE": 1048.4457398010347,
+      "MAPE": 13.50767706339635,
+      "sMAPE": 13.168926294875426,
+      "WAPE": 11.901813171622678,
+      "MASE": 0.5526804643233462
+    }
+  },
+  "metrics_campeon": {
+    "MAE": 812.5885305849905,
+    "RMSE": 1049.380225190924,
+    "MAPE": 13.417778129279782,
+    "sMAPE": 13.063746746210537,
+    "WAPE": 11.822280427631608,
+    "MASE": 0.5489872292469715
+  },
+  "metrics_modelo_guardado": {
+    "MAE": 812.5885305849905,
+    "RMSE": 1049.380225190924,
+    "MAPE": 13.417778129279782,
+    "sMAPE": 13.063746746210537,
+    "WAPE": 11.822280427631608,
+    "MASE": 0.5489872292469715
+  },
+  "prediccion_futura": [
+    {
+      "fecha": "2026-05-11",
+      "semana": 18,
+      "prediccion": 8184.69,
+      "ic_inferior": 6267.57,
+      "ic_superior": 10688.12
+    },
+    {
+      "fecha": "2026-05-18",
+      "semana": 19,
+      "prediccion": 8700.63,
+      "ic_inferior": 5978.1,
+      "ic_superior": 12662.85
+    },
+    {
+      "fecha": "2026-05-25",
+      "semana": 20,
+      "prediccion": 9058.13,
+      "ic_inferior": 5929.28,
+      "ic_superior": 13837.77
+    },
+    {
+      "fecha": "2026-06-01",
+      "semana": 21,
+      "prediccion": 9262.01,
+      "ic_inferior": 5943.59,
+      "ic_superior": 14432.87
+    }
+  ],
+  "nota_futuro": null,
+  "ic_nivel": "95%",
+  "diagnostico_residuos": {
+    "n": 644,
+    "mean": 0.010565972714586864,
+    "std": 0.3583538671683838,
+    "ljung_box": {
+      "lags": 10,
+      "stat": 14.339689963200646,
+      "pvalue": 0.15805346875266857
+    },
+    "jarque_bera": {
+      "stat": 5217915.460048066,
+      "pvalue": 0.0,
+      "skew": 19.035299974089753,
+      "kurtosis": 442.32574041542716
+    },
+    "interpretacion": {
+      "residuos_sin_autocorrelacion": true,
+      "residuos_normales": false,
+      "sesgo_bajo": true
+    }
+  },
+  "n_weeks": 644,
+  "n_folds": 13,
+  "exogenas_meteo": [
+    "temp_promedio_semanal",
+    "humedad_relativa_promedio_porcentaje",
+    "precipitacion_promedio_diario_mm",
+    "radiacion_solar_media_MJ_m2"
+  ],
+  "target_gaps_imputados": 0,
+  "exog_gaps_imputados": {
+    "temp_promedio_semanal": 2,
+    "humedad_relativa_promedio_porcentaje": 2,
+    "precipitacion_promedio_diario_mm": 2,
+    "radiacion_solar_media_MJ_m2": 2
+  },
+  "warnings": [
+    "dataset_Coquimbo.parquet: en 2026 se descartan semanas fuera de secuencia [53] (artefacto, p. ej. semana 53 espuria).",
+    "dataset_Coquimbo.parquet: descartada semana final 18 por incompleta (total 1444 < 50% de la mediana reciente 6962)."
+  ],
+  "config": {
+    "level": "region",
+    "target": "NumTotal",
+    "log_transform": true,
+    "meteo_exog": [
+      "temp_promedio_semanal",
+      "humedad_relativa_promedio_porcentaje",
+      "precipitacion_promedio_diario_mm",
+      "radiacion_solar_media_MJ_m2"
+    ],
+    "drop_exog": [
+      "pm2_5_ug_m3",
+      "pm10_ug_m3"
+    ],
+    "standardize_exog": true,
+    "fourier_period": 52.17857142857143,
+    "fourier_terms": 2,
+    "horizon": 4,
+    "step": 4,
+    "test_weeks": 52,
+    "min_train_weeks": 156,
+    "ci_alpha": 0.05,
+    "p_range": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "q_range": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "d_max": 2,
+    "seasonal_order": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "season": 52,
+    "max_gap_weeks": 6,
+    "partial_week_frac": 0.5,
+    "n_jobs": 4,
+    "random_seed": 42,
+    "make_plots": true,
+    "out_dir": "resultados"
+  }
+}

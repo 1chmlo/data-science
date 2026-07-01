@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Forecasting Urgencias — Resultados</title>
+<style>
+  :root {
+    --bg: #0f172a; --panel: #ffffff; --muted: #64748b; --line: #e2e8f0;
+    --ink: #0f172a; --accent: #2563eb; --accent-soft: #dbeafe;
+    --good: #16a34a; --bad: #dc2626; --warn: #b45309; --chip: #f1f5f9;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    color: var(--ink); background: #f8fafc;
+  }
+  header {
+    background: var(--bg); color: #fff; padding: 16px 24px;
+    display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap;
+  }
+  header h1 { font-size: 18px; margin: 0; font-weight: 650; }
+  header .sub { color: #94a3b8; font-size: 13px; }
+  .layout { display: grid; grid-template-columns: 340px 1fr; gap: 0; min-height: calc(100vh - 56px); }
+  @media (max-width: 900px) { .layout { grid-template-columns: 1fr; } }
+
+  aside { border-right: 1px solid var(--line); background: #fff; padding: 14px; }
+  .filters { display: flex; flex-direction: column; gap: 10px; margin-bottom: 12px; }
+  .seg { display: flex; gap: 6px; }
+  .seg button {
+    flex: 1; padding: 7px 8px; border: 1px solid var(--line); background: #fff;
+    border-radius: 8px; cursor: pointer; font-size: 13px; color: var(--muted);
+  }
+  .seg button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+  input[type="search"] {
+    width: 100%; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; font-size: 14px;
+  }
+  .count { font-size: 12px; color: var(--muted); margin: 4px 2px 8px; }
+  .list { display: flex; flex-direction: column; gap: 4px; max-height: calc(100vh - 220px); overflow: auto; }
+  .item {
+    display: grid; grid-template-columns: 1fr auto; gap: 2px 8px; align-items: center;
+    padding: 9px 10px; border: 1px solid var(--line); border-radius: 9px; cursor: pointer; background: #fff;
+  }
+  .item:hover { border-color: #cbd5e1; background: #fcfdff; }
+  .item.active { border-color: var(--accent); background: var(--accent-soft); }
+  .item .name { font-size: 14px; font-weight: 600; }
+  .item .lvl { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+  .item .mase { font-size: 13px; font-variant-numeric: tabular-nums; font-weight: 700; }
+  .mase.gt1 { color: var(--bad); } .mase.le1 { color: var(--good); }
+
+  main { padding: 22px 26px; overflow: auto; }
+  .empty { color: var(--muted); padding: 40px; text-align: center; }
+  .title-row { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+  h2 { margin: 0 0 2px; font-size: 22px; }
+  .badges { display: flex; gap: 6px; flex-wrap: wrap; margin: 10px 0 18px; }
+  .badge {
+    font-size: 12px; padding: 4px 9px; border-radius: 999px; background: var(--chip); color: #334155;
+    border: 1px solid var(--line);
+  }
+  .badge.accent { background: var(--accent-soft); color: #1e40af; border-color: #bfdbfe; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 1100px) { .grid { grid-template-columns: 1fr; } }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+  .card h3 { margin: 0 0 10px; font-size: 14px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { padding: 7px 8px; text-align: right; border-bottom: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+  th:first-child, td:first-child { text-align: left; }
+  thead th { color: var(--muted); font-weight: 600; }
+  tr.saved td { background: var(--accent-soft); font-weight: 600; }
+  tr.champ td:first-child::after { content: " ★"; color: #f59e0b; }
+  .figure { grid-column: 1 / -1; }
+  .figure img { width: 100%; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
+  .figcap { color: var(--muted); font-size: 12px; margin: 6px 2px 16px; }
+  .note { background: #fffbeb; border: 1px solid #fde68a; color: #92400e; padding: 8px 12px;
+          border-radius: 8px; font-size: 13px; margin-top: 8px; }
+  .diag span { display: inline-block; margin-right: 14px; font-size: 13px; }
+  .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
+  .dot.ok { background: var(--good); } .dot.no { background: var(--bad); }
+
+  .cap { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 16px; margin-bottom: 20px; }
+  .cap h3 { margin: 0 0 12px; font-size: 14px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+  .cap-row { display: flex; gap: 10px; align-items: flex-end; flex-wrap: wrap; }
+  .cap-field label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+  .cap-field input { padding: 9px 11px; border: 1px solid var(--line); border-radius: 8px; font-size: 15px; width: 240px; }
+  .cap button { padding: 10px 16px; border: 0; background: var(--accent); color: #fff; border-radius: 8px;
+                cursor: pointer; font-size: 14px; font-weight: 600; }
+  .cap button:hover { background: #1d4ed8; }
+  .cap-hint { font-size: 12px; color: var(--muted); margin-top: 8px; }
+  .cap-msg { margin-top: 14px; padding: 14px 16px; border-radius: 10px; font-size: 14px; line-height: 1.55; }
+  .cap-msg .head { font-size: 15px; font-weight: 700; margin-bottom: 4px; display: block; }
+  .cap-ok { background: #dcfce7; border: 1px solid #86efac; color: #166534; }
+  .cap-bad { background: #fee2e2; border: 1px solid #fca5a5; color: #991b1b; }
+  .cap-warn { background: #fef9c3; border: 1px solid #fde68a; color: #854d0e; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Forecasting de Urgencias Hospitalarias</h1>
+  <span class="sub">SARIMAX · walk-forward · resultados por región y hospital</span>
+</header>
+
+<div class="layout">
+  <aside>
+    <div class="filters">
+      <div class="seg" id="levelSeg">
+        <button data-level="all" class="active">Todos</button>
+        <button data-level="region">Regiones</button>
+        <button data-level="hospital">Hospitales</button>
+      </div>
+      <input type="search" id="search" placeholder="Buscar región u hospital…" />
+    </div>
+    <div class="count" id="count"></div>
+    <div class="list" id="list"></div>
+  </aside>
+
+  <main id="detail"><div class="empty">Selecciona una serie de la lista.</div></main>
+</div>
+
+<script src="data.js"></script>
+<script>
+const MODELS = ["seasonal_naive", "arima_fourier", "sarimax"];
+const METRIC_COLS = ["MAE", "RMSE", "MAPE", "sMAPE", "WAPE", "MASE"];
+const state = { level: "all", search: "", selected: null };
+
+const nf0 = new Intl.NumberFormat("es-CL", { maximumFractionDigits: 0 });
+const nf1 = new Intl.NumberFormat("es-CL", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+const nf3 = new Intl.NumberFormat("es-CL", { minimumFractionDigits: 3, maximumFractionDigits: 3 });
+
+function fmt(col, v) {
+  if (v == null || Number.isNaN(v)) return "—";
+  if (col === "MASE") return nf3.format(v);
+  if (col === "MAPE" || col === "sMAPE" || col === "WAPE") return nf1.format(v) + "%";
+  return nf0.format(v);
+}
+function maseOf(r) { const m = r.metrics[r.saved_model]; return m ? m.MASE : Infinity; }
+
+function filtered() {
+  const q = state.search.trim().toLowerCase();
+  return (window.RESULTS || [])
+    .filter(r => state.level === "all" || r.level === state.level)
+    .filter(r => !q || r.display.toLowerCase().includes(q) || String(r.id).toLowerCase().includes(q))
+    .sort((a, b) => maseOf(a) - maseOf(b));
+}
+
+function renderList() {
+  const rows = filtered();
+  document.getElementById("count").textContent =
+    rows.length + " serie" + (rows.length === 1 ? "" : "s") + " · ordenadas por MASE";
+  const list = document.getElementById("list");
+  list.innerHTML = "";
+  rows.forEach(r => {
+    const mase = maseOf(r);
+    const el = document.createElement("div");
+    el.className = "item" + (state.selected === key(r) ? " active" : "");
+    el.innerHTML =
+      `<div class="name">${r.display}</div>` +
+      `<div class="mase ${mase <= 1 ? "le1" : "gt1"}">${nf3.format(mase)}</div>` +
+      `<div class="lvl">${r.level}</div>`;
+    el.onclick = () => { state.selected = key(r); renderList(); renderDetail(r); };
+    list.appendChild(el);
+  });
+}
+
+function key(r) { return r.level + "/" + r.id; }
+
+function metricsTable(r) {
+  let body = "";
+  MODELS.forEach(mName => {
+    const m = r.metrics[mName];
+    if (!m) return;
+    const cls = (mName === r.saved_model ? "saved " : "") + (mName === r.best_model ? "champ" : "");
+    body += `<tr class="${cls.trim()}"><td>${mName}</td>` +
+      METRIC_COLS.map(c => `<td>${fmt(c, m[c])}</td>`).join("") + "</tr>";
+  });
+  return `<table><thead><tr><th>Modelo</th>${METRIC_COLS.map(c => `<th>${c}</th>`).join("")}</tr></thead><tbody>${body}</tbody></table>`;
+}
+
+function futureTable(r) {
+  if (!r.future || !r.future.length) return "<p class='figcap'>Sin pronóstico futuro.</p>";
+  const rows = r.future.map(f =>
+    `<tr><td>${f.fecha}</td><td>${f.semana}</td><td>${nf0.format(f.prediccion)}</td>` +
+    `<td>${nf0.format(f.ic_inferior)} – ${nf0.format(f.ic_superior)}</td></tr>`).join("");
+  const note = r.future_note ? `<div class="note">${r.future_note}</div>` : "";
+  return `<table><thead><tr><th>Fecha</th><th>Semana</th><th>Predicción</th><th>IC ${r.ic || ""}</th></tr></thead><tbody>${rows}</tbody></table>${note}`;
+}
+
+function diagBlock(r) {
+  const d = r.diag || {};
+  const item = (label, ok) => `<span><span class="dot ${ok ? "ok" : "no"}"></span>${label}</span>`;
+  return `<div class="diag">` +
+    item("Sin autocorrelación", d.residuos_sin_autocorrelacion) +
+    item("Residuos normales", d.residuos_normales) +
+    item("Sesgo bajo", d.sesgo_bajo) + `</div>`;
+}
+
+function renderDetail(r) {
+  const order = r.order ? "(" + r.order.join(",") + ")" : "—";
+  const warns = (r.warnings || []).length
+    ? `<div class="note">${r.warnings.join("<br>")}</div>` : "";
+  document.getElementById("detail").innerHTML = `
+    <div class="title-row"><h2>${r.display}</h2></div>
+    <div class="badges">
+      <span class="badge">${r.level}</span>
+      <span class="badge accent">Modelo guardado: ${r.saved_model} ${order}</span>
+      <span class="badge">Campeón backtest: ${r.best_model}</span>
+      <span class="badge">${r.n_weeks} semanas · ${r.n_folds} folds</span>
+      <span class="badge">IC ${r.ic || ""}</span>
+    </div>
+    <div class="cap">
+      <h3>Planificación de capacidad — ¿damos abasto el próximo mes?</h3>
+      <div class="cap-row">
+        <div class="cap-field">
+          <label>Capacidad ${r.level === "region" ? "regional" : "del hospital"} (atenciones por semana)</label>
+          <input type="number" id="capInput" min="0" step="1" placeholder="Ej: ${capPlaceholder(r)}" />
+        </div>
+        <button id="capBtn">Evaluar capacidad</button>
+      </div>
+      <div class="cap-hint">Se compara la capacidad semanal contra la <b>semana pico</b> del próximo mes
+        más el margen de error del modelo (MAPE ${fmt("MAPE", (r.metrics[r.saved_model] || {}).MAPE)}).</div>
+      <div id="capResult"></div>
+    </div>
+    <div class="grid">
+      <div class="card"><h3>Métricas por modelo</h3>${metricsTable(r)}
+        <p class="figcap">★ campeón del backtest · fila resaltada = modelo guardado (.pkl)</p>
+        ${diagBlock(r)}
+      </div>
+      <div class="card"><h3>Pronóstico próximo mes (h=4)</h3>${futureTable(r)}</div>
+      <div class="figure card"><h3>Validación: real vs predicción + IC</h3>
+        ${r.img_forecast ? `<img src="${r.img_forecast}" alt="forecast" />` : "<p class='figcap'>Sin gráfico.</p>"}
+        <div class="figcap">Historia (gris), backtest real (negro) vs predicción (rojo) con banda IC, y pronóstico del próximo mes (azul).</div>
+      </div>
+      <div class="figure card"><h3>Diagnóstico de residuos</h3>
+        ${r.img_residuos ? `<img src="${r.img_residuos}" alt="residuos" />` : "<p class='figcap'>Sin gráfico.</p>"}
+        <div class="figcap">Residuos en el tiempo, histograma, ACF y PACF.</div>
+      </div>
+      ${warns}
+    </div>`;
+
+  const capBtn = document.getElementById("capBtn");
+  const capInput = document.getElementById("capInput");
+  if (capBtn && capInput) {
+    capBtn.onclick = () => evaluateCapacity(r);
+    capInput.addEventListener("keydown", e => { if (e.key === "Enter") evaluateCapacity(r); });
+  }
+}
+
+function capPlaceholder(r) {
+  if (!r.future || !r.future.length) return "5000";
+  const peak = Math.max(...r.future.map(f => f.prediccion));
+  return nf0.format(Math.round(peak / 100) * 100);
+}
+
+function evaluateCapacity(r) {
+  const out = document.getElementById("capResult");
+  const raw = (document.getElementById("capInput").value || "").replace(",", ".");
+  const cap = parseFloat(raw);
+  if (!isFinite(cap) || cap <= 0) {
+    out.innerHTML = `<div class="cap-msg cap-warn">Ingresa una capacidad válida (número mayor que 0).</div>`;
+    return;
+  }
+  if (!r.future || !r.future.length) {
+    out.innerHTML = `<div class="cap-msg cap-warn">Esta serie no tiene pronóstico futuro disponible.</div>`;
+    return;
+  }
+  const mape = (r.metrics[r.saved_model] || {}).MAPE;
+  const margin = isFinite(mape) ? mape / 100 : 0;
+  const peak = r.future.reduce((a, b) => (b.prediccion > a.prediccion ? b : a));
+  const threshold = peak.prediccion * (1 + margin);
+  const ambito = r.level === "region" ? "la región" : "el hospital";
+  const ambitoDe = r.level === "region" ? "de la región" : "del hospital";
+
+  const detalle =
+    `Semana pico: <strong>sem ${peak.semana}</strong> (${peak.fecha}), ` +
+    `demanda estimada <strong>${nf0.format(peak.prediccion)}</strong> atenciones. ` +
+    `Con el margen de error del modelo (MAPE ${fmt("MAPE", mape)}) el requerimiento asciende a ` +
+    `<strong>${nf0.format(threshold)}</strong> atenciones/semana. ` +
+    `Capacidad ingresada: <strong>${nf0.format(cap)}</strong>.`;
+
+  if (cap >= threshold) {
+    out.innerHTML =
+      `<div class="cap-msg cap-ok"><span class="head">✅ La capacidad da abasto</span>` +
+      `Con la capacidad declarada, ${ambito} cubre incluso la semana más exigente del próximo mes ` +
+      `(holgura de <strong>${nf0.format(cap - threshold)}</strong> atenciones). ${detalle}</div>`;
+  } else {
+    out.innerHTML =
+      `<div class="cap-msg cap-bad"><span class="head">⛔ Riesgo: capacidad insuficiente el próximo mes</span>` +
+      `El modelo detecta que el próximo mes <strong>se superará la capacidad ${ambitoDe}</strong>: ` +
+      `faltarían <strong>${nf0.format(threshold - cap)}</strong> atenciones/semana en el peor escenario. ` +
+      `Se recomienda tomar medidas: <strong>pedir más insumos</strong>, <strong>habilitar más camillas</strong> ` +
+      `y/o <strong>reforzar personal</strong>. ${detalle}</div>`;
+  }
+}
+
+document.getElementById("levelSeg").addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  state.level = b.dataset.level;
+  [...e.currentTarget.children].forEach(x => x.classList.toggle("active", x === b));
+  renderList();
+});
+document.getElementById("search").addEventListener("input", e => {
+  state.search = e.target.value; renderList();
+});
+
+if (!window.RESULTS || !window.RESULTS.length) {
+  document.getElementById("detail").innerHTML =
+    "<div class='empty'>No se encontró <code>data.js</code>. Genera los datos con<br><code>python -m forecasting.build_web</code>.</div>";
+} else {
+  renderList();
+  const first = filtered()[0];
+  if (first) { state.selected = key(first); renderList(); renderDetail(first); }
+}
+</script>
+</body>
+</html>

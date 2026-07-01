@@ -1,0 +1,181 @@
+{
+  "series_id": "Antofagasta",
+  "level": "region",
+  "best_model": "seasonal_naive",
+  "modelo_guardado": "sarimax",
+  "orders": {
+    "arima_fourier": [
+      2,
+      1,
+      2
+    ],
+    "sarimax": [
+      2,
+      1,
+      2
+    ]
+  },
+  "metrics_por_modelo": {
+    "seasonal_naive": {
+      "MAE": 673.9423076923077,
+      "RMSE": 866.7867162909579,
+      "MAPE": 11.82886318933392,
+      "sMAPE": 11.037840321723822,
+      "WAPE": 11.618693348716622,
+      "MASE": 0.6039992002978202
+    },
+    "arima_fourier": {
+      "MAE": 819.1922639126047,
+      "RMSE": 1079.540254644298,
+      "MAPE": 16.102452226808413,
+      "sMAPE": 15.515673508075881,
+      "WAPE": 14.12278706857348,
+      "MASE": 0.7341748197818648
+    },
+    "sarimax": {
+      "MAE": 814.7449723267824,
+      "RMSE": 1075.9270100328533,
+      "MAPE": 15.876758875760629,
+      "sMAPE": 15.345429810274617,
+      "WAPE": 14.04611623699306,
+      "MASE": 0.7301890771883693
+    }
+  },
+  "metrics_campeon": {
+    "MAE": 673.9423076923077,
+    "RMSE": 866.7867162909579,
+    "MAPE": 11.82886318933392,
+    "sMAPE": 11.037840321723822,
+    "WAPE": 11.618693348716622,
+    "MASE": 0.6039992002978202
+  },
+  "metrics_modelo_guardado": {
+    "MAE": 814.7449723267824,
+    "RMSE": 1075.9270100328533,
+    "MAPE": 15.876758875760629,
+    "sMAPE": 15.345429810274617,
+    "WAPE": 14.04611623699306,
+    "MASE": 0.7301890771883693
+  },
+  "prediccion_futura": [
+    {
+      "fecha": "2026-05-11",
+      "semana": 18,
+      "prediccion": 5964.5,
+      "ic_inferior": 4613.07,
+      "ic_superior": 7711.76
+    },
+    {
+      "fecha": "2026-05-18",
+      "semana": 19,
+      "prediccion": 6564.76,
+      "ic_inferior": 4589.64,
+      "ic_superior": 9389.67
+    },
+    {
+      "fecha": "2026-05-25",
+      "semana": 20,
+      "prediccion": 7163.44,
+      "ic_inferior": 4732.3,
+      "ic_superior": 10843.27
+    },
+    {
+      "fecha": "2026-06-01",
+      "semana": 21,
+      "prediccion": 7609.38,
+      "ic_inferior": 4885.23,
+      "ic_superior": 11852.27
+    }
+  ],
+  "nota_futuro": "meteo futura estimada con climatologia (promedio por semana-del-anio).",
+  "ic_nivel": "95%",
+  "diagnostico_residuos": {
+    "n": 644,
+    "mean": 0.013411464168873323,
+    "std": 0.39412116864194163,
+    "ljung_box": {
+      "lags": 10,
+      "stat": 115.3794158620474,
+      "pvalue": 4.3700667044469635e-20
+    },
+    "jarque_bera": {
+      "stat": 2318273.891196958,
+      "pvalue": 0.0,
+      "skew": 9.256527965066851,
+      "kurtosis": 296.3471783624006
+    },
+    "interpretacion": {
+      "residuos_sin_autocorrelacion": false,
+      "residuos_normales": false,
+      "sesgo_bajo": true
+    }
+  },
+  "n_weeks": 644,
+  "n_folds": 13,
+  "exogenas_meteo": [
+    "temp_promedio_semanal",
+    "humedad_relativa_promedio_porcentaje",
+    "precipitacion_promedio_diario_mm",
+    "radiacion_solar_media_MJ_m2"
+  ],
+  "target_gaps_imputados": 0,
+  "exog_gaps_imputados": {
+    "temp_promedio_semanal": 2,
+    "humedad_relativa_promedio_porcentaje": 2,
+    "precipitacion_promedio_diario_mm": 2,
+    "radiacion_solar_media_MJ_m2": 2
+  },
+  "warnings": [
+    "dataset_Antofagasta.parquet: en 2026 se descartan semanas fuera de secuencia [53] (artefacto, p. ej. semana 53 espuria).",
+    "dataset_Antofagasta.parquet: descartada semana final 18 por incompleta (total 941 < 50% de la mediana reciente 5350)."
+  ],
+  "config": {
+    "level": "region",
+    "target": "NumTotal",
+    "log_transform": true,
+    "meteo_exog": [
+      "temp_promedio_semanal",
+      "humedad_relativa_promedio_porcentaje",
+      "precipitacion_promedio_diario_mm",
+      "radiacion_solar_media_MJ_m2"
+    ],
+    "drop_exog": [
+      "pm2_5_ug_m3",
+      "pm10_ug_m3"
+    ],
+    "standardize_exog": true,
+    "fourier_period": 52.17857142857143,
+    "fourier_terms": 2,
+    "horizon": 4,
+    "step": 4,
+    "test_weeks": 52,
+    "min_train_weeks": 156,
+    "ci_alpha": 0.05,
+    "p_range": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "q_range": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "d_max": 2,
+    "seasonal_order": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "season": 52,
+    "max_gap_weeks": 6,
+    "partial_week_frac": 0.5,
+    "n_jobs": 4,
+    "random_seed": 42,
+    "make_plots": true,
+    "out_dir": "resultados"
+  }
+}

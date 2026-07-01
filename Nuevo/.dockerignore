@@ -1,0 +1,11 @@
+# Mantener el contexto de build liviano.
+.venv/
+datasets_regionales/
+datasets_hospitales/
+**/__pycache__/
+**/modelo.pkl          # build_web no los necesita (son el grueso de resultados/)
+web/data.js            # se regenera en la etapa build
+web/assets/            # se regenera en la etapa build
+*.ipynb
+run_regions.sh
+run_region.log
